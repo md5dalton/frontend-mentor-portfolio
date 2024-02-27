@@ -1,3 +1,11 @@
+import Hero from "./Hero"
+import Projects from "./Projects"
+import Skills from "./Skills"
+
 export default () => (
-    <p>portfolio</p>
+    <main className="pt-10 grid gap-20">
+        <Hero />
+        <Skills />
+        <Projects />
+    </main>
 )
