@@ -18,13 +18,17 @@ export default () => (
             // backgroundPositionY: "50%, 50%, bottom",
             backgroundSize: "contain, auto, auto"
         }}
-        className="relative min-h-[380px] bg-no-repeat text-center"
+        className="
+            page-w min-h-[380px] bg-no-repeat text-center
+            items-center justify-between
+            md:!bg-none md:min-h-0 md:flex
+        "
     >
-        <p className="text-md my-5">
+        <p className="text-md my-5 md:my-8">
             <Link href="/">majarampiti</Link>
         </p>
         <UList
-            className="flex items-center gap-6 justify-center"
+            className="flex items-center gap-6 justify-center md:gap-8 md:px-4"
             items={links}
             itemHandler={({ name, link }) => (
                 <Link href={link} target="_blank">
