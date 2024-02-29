@@ -18,6 +18,20 @@ const projects = [
             "html", "css"
         ]
     },
+    {
+        name: "design portfolio",
+        thumbnails: {
+            small: "/thumbs/thumbnail-project-2-small.webp", 
+            large: "/thumbs/thumbnail-project-2-large.webp"
+        },
+        links: {
+            code: "#",
+            site: "#"
+        },
+        tech: [
+            "html", "css"
+        ]
+    },
 ]
 
 export default () => (
@@ -27,7 +41,7 @@ export default () => (
             <ContactMe />
         </div>
         <UList
-            className=""
+            className="grid gap-10"
             items={projects}
             itemHandler={({ name, thumbnails: { small, large }, links: { code, site }, tech }) => (
                 <div className="grid gap-5 uppercase">
@@ -40,7 +54,7 @@ export default () => (
                     <div>
                         <h2 className="text-md font-bold">{name}</h2>
                         <UList
-                            className="flex gap-5 text-light-grey"
+                            className="flex gap-5 opacity-50"
                             items={tech}
                             itemHandler={item => <p>{item}</p>}
                         />
