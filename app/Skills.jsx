@@ -17,7 +17,7 @@ export default () => (
             itemHandler={({ name, years }) => (
                 <div>
                     <h2 className="text-md font-bold">{name}</h2>
-                    <p className="text-light-grey">{`${years} Years Experience`}</p>
+                    <p className="opacity-50">{`${years} Years Experience`}</p>
                 </div>
             )}
         />
