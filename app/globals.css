@@ -12,6 +12,12 @@
             tracking-[2.2px] font-bold uppercase
             h-10 hover:text-light-green transition-colors
     }
+    .input {
+        @apply 
+            bg-transparent pb-4 px-4 outline-none 
+            border-b-[1px] border-b-light-grey
+            focus:border-b-light-green
+    }
 }
 
 input, textarea {
