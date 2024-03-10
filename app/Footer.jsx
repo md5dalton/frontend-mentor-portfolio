@@ -1,4 +1,4 @@
-import Contact from "./Contact"
+import Contact from "./(contact)/Contact"
 import Nav from "./Nav"
 
 export default () => (
