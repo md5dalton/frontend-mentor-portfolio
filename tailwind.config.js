@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     fontSize: {
+      xxs: ["12px", {
+        // lineHeight: "16px",
+        fontWeight: "600"
+      }],
       base: ["18px", {
         lineHeight: "28px",
         fontWeight: "600"
