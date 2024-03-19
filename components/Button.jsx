@@ -1,6 +1,9 @@
+import Link from "next/link"
+
 export default ({ children, ...props }) => (
-    <button
+    <Link
         {...props}
-        className="btn"
-    >{children}</button>
+        href="#contact"
+        className="btn inline-block"
+    >{children}</Link>
 )
