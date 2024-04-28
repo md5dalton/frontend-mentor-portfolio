@@ -1,4 +1,5 @@
 import Form from "./Form"
+import Messanger from "./Messanger"
 
 export default () => (
     <section className="page-w text-center grid gap-12" id="contact">
@@ -7,5 +8,6 @@ export default () => (
             <p className="mt-5 opacity-50">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
         </div>
         <Form />
+        {/* <Messanger /> */}
     </section>
 )
