@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="bg-very-dark-grey text-white text-base">
       <body className={font.className}>
         <Header />
-        {/* {children} */}
+        {children}
         <Footer />
       </body>
     </html>
