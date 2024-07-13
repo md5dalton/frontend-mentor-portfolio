@@ -10,16 +10,18 @@ const skills = [
 ]
 
 export default () => (
-    <section className="page-w text-center">
-        <UList
-            className="border-y-2 border-y-light-grey py-10 grid gap-6"
-            items={skills}
-            itemHandler={({ name, years }) => (
-                <div>
-                    <h2 className="text-md font-bold">{name}</h2>
-                    <p className="opacity-50">{`${years} Years Experience`}</p>
-                </div>
-            )}
-        />
+    <section className="text-center">
+        <div className="page">
+            <UList
+                className="border-y-2 border-y-light-grey py-10 grid gap-6"
+                items={skills}
+                itemHandler={({ name, years }) => (
+                    <div>
+                        <h2 className="text-md font-bold">{name}</h2>
+                        <p className="opacity-50">{`${years} Years Experience`}</p>
+                    </div>
+                )}
+            />
+        </div>
     </section>
 )
