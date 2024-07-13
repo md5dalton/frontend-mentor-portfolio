@@ -1,6 +1,7 @@
 import Link from "next/link"
 import UList from "../components/UList"
 import Image from "next/image"
+import Nav from "./Nav"
 
 const links = [
     {name: "GitHub", link: "https://github.com/md5dalton"},
@@ -10,6 +11,15 @@ const links = [
 ]
 
 export default () => (
+    <header className="py-5 md:py-8 lg:py-10">
+        <div className="page">
+            <Nav />
+        </div>
+    </header>
+)
+
+
+const header = () => (
     <header
         style={{
             backgroundImage: "url(/images/image-profile-mobile.webp), url(/icons/pattern-rings.svg), url(/icons/pattern-circle.svg)",
