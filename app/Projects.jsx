@@ -35,7 +35,7 @@ const projects = [
 ]
 
 export default () => (
-    <section className="page-w">
+    <section className="page">
         <div className="flex items-center justify-between pb-10">
             <h2 className="text-[40px] leading-[40px] font-bold">Projects</h2>
             <ContactMe />
