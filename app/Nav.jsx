@@ -10,10 +10,12 @@ const links = [
 ]
 
 export default () => (
-    <nav className="text-center grid gap-5 md:gap-0 md:items-center md:justify-between md:flex">
-        <Link className="text-md my-5 md:my-8" href="/">majarampiti</Link>
+    <nav className="flex items-center flex-col gap-5 md:flex-row md:justify-between">
+        <div>
+            <Link className="text-md" href="/">majarampiti</Link>
+        </div>
         <UList
-            className="flex items-center gap-6 justify-center md:gap-8 md:px-4"
+            className="flex gap-6"
             items={links}
             itemHandler={({ name, link }) => (
                 <Link href={link} target="_blank">
