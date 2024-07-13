@@ -15,7 +15,7 @@ export default () => (
             <Link className="text-md" href="/">majarampiti</Link>
         </div>
         <UList
-            className="flex gap-6"
+            className="flex gap-6 md:gap-8"
             items={links}
             itemHandler={({ name, link }) => (
                 <Link href={link} target="_blank">
