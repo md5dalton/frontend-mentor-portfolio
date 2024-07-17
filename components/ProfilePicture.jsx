@@ -22,7 +22,8 @@ export default () => (
                         
 
                     "
-                    src="/images/image-profile-mobile.webp"
+                    // src="/images/image-profile-mobile.webp"
+                    src="/images/Untitled-2.png"
                     height={380}
                     width={170}
                     alt=""
