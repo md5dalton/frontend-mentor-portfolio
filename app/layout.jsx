@@ -2,14 +2,13 @@ import { Space_Grotesk } from "next/font/google"
 import "./globals.css"
 import Header from "./Header"
 import Footer from "./Footer"
-import Image from "next/image"
 import ProfilePicture from "@/components/ProfilePicture"
 
 const font = Space_Grotesk({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Majara Mpiti",
-  description: "Frontend developer",
+  title: "Mjr Mpiti",
+  description: "Majara Mpiti Frontend developer",
 }
 
 export default function RootLayout({ children }) {
