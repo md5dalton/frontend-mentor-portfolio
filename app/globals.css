@@ -9,7 +9,7 @@
     .btn {
         @apply 
             border-b-2 border-b-light-green
-            tracking-[2.2px] font-bold uppercase
+            tracking-[2.29px] font-bold uppercase
             h-10 hover:text-light-green transition-colors
     }
     .input {
@@ -22,4 +22,41 @@
 
 input, textarea {
     outline: none;
+}
+
+:root {
+    --body-fs: 16px;
+    --body-fw: 600;
+    --body-lh: 26px;
+    
+    --h-l-fs: 32px;
+    --h-l-lh: 40px;
+    --h-l-ls: -1px;
+    
+    --h-xl-fs: 40px;
+    --h-xl-lh: 40px;
+    --h-xl-ls: -1.14px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --body-fs: 18px;
+        --body-lh: 28px;
+    
+        
+        --h-l-fs: 48px;
+        --h-l-lh: 56px;
+        --h-l-ls: -1.5px;
+        
+        --h-xl-fs: 72px;
+        --h-xl-lh: 72px;
+        --h-xl-ls: -2.05px;
+    }
+}
+@media (min-width: 1024px) {
+    :root {
+        --h-xl-fs: 88px;
+        --h-xl-lh: 88px;
+        --h-xl-ls: -2.5px;
+    }
 }
