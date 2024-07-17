@@ -1,3 +1,4 @@
+import Section from "@/components/Section"
 import UList from "@/components/UList"
 
 const skills = [
@@ -10,18 +11,19 @@ const skills = [
 ]
 
 export default () => (
-    <section className="text-center">
-        <div className="page">
-            <UList
-                className="border-y-2 border-y-light-grey py-10 grid gap-6"
-                items={skills}
-                itemHandler={({ name, years }) => (
-                    <div>
-                        <h2 className="text-md font-bold">{name}</h2>
-                        <p className="opacity-50">{`${years} Years Experience`}</p>
-                    </div>
-                )}
-            />
-        </div>
-    </section>
+    <Section>
+        <UList
+            className="
+                border-y-2 border-y-light-grey py-10 md:py-12 md:border-b-0 lg:py-14
+                grid gap-y-6 md:grid-cols-2 md:gap-y-12 lg:grid-cols-3 lg:gap-y-14 
+            "
+            items={skills}
+            itemHandler={({ name, years }) => (
+                <div>
+                    <h2 className="text-h-l">{name}</h2>
+                    <p className="opacity-50">{`${years} Years Experience`}</p>
+                </div>
+            )}
+        />
+    </Section>
 )
