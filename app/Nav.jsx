@@ -12,7 +12,7 @@ const links = [
 export default () => (
     <nav className="flex items-center flex-col gap-5 md:flex-row md:justify-between">
         <div>
-            <Link className="text-h-m" href="/">mjmpiti</Link>
+            <Link className="text-h-m" href="/">mjrmpiti</Link>
         </div>
         <UList
             className="flex gap-6 md:gap-8"
