@@ -2,6 +2,8 @@ import { Space_Grotesk } from "next/font/google"
 import "./globals.css"
 import Header from "./Header"
 import Footer from "./Footer"
+import Image from "next/image"
+import ProfilePicture from "@/components/ProfilePicture"
 
 const font = Space_Grotesk({ subsets: ["latin"] })
 
@@ -17,6 +19,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <ProfilePicture />
       </body>
     </html>
   )
