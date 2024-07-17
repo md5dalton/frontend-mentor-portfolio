@@ -11,7 +11,7 @@ const links = [
 ]
 
 export default () => (
-    <header className="py-5 md:py-8 lg:py-10">
+    <header className="py-5 md:py-8 lg:py-10 lg:pr-8">
         <div className="page">
             <Nav />
         </div>
