@@ -1,4 +1,5 @@
 import ContactMe from "@/components/ContactMe"
+import Section from "@/components/Section"
 import UList from "@/components/UList"
 import Image from "next/image"
 import Link from "next/link"
@@ -32,16 +33,44 @@ const projects = [
             "html", "css"
         ]
     },
+    {
+        name: "design portfolio",
+        thumbnails: {
+            small: "/thumbs/thumbnail-project-2-small.webp", 
+            large: "/thumbs/thumbnail-project-2-large.webp"
+        },
+        links: {
+            code: "#",
+            site: "#"
+        },
+        tech: [
+            "html", "css"
+        ]
+    },
+    {
+        name: "design portfolio",
+        thumbnails: {
+            small: "/thumbs/thumbnail-project-2-small.webp", 
+            large: "/thumbs/thumbnail-project-2-large.webp"
+        },
+        links: {
+            code: "#",
+            site: "#"
+        },
+        tech: [
+            "html", "css"
+        ]
+    },
 ]
 
 export default () => (
-    <section className="page">
-        <div className="flex items-center justify-between pb-10">
-            <h2 className="text-[40px] leading-[40px] font-bold">Projects</h2>
+    <Section>
+        <div className="flex items-center justify-between mb-10 md:mb-20">
+            <h2 className="text-h-xl">Projects</h2>
             <ContactMe />
         </div>
         <UList
-            className="grid gap-10"
+            className="grid gap-y-10 md:grid-cols-2 md:gap-y-16 md:gap-x-6"
             items={projects}
             itemHandler={({ name, thumbnails: { small, large }, links: { code, site }, tech }) => (
                 <div className="grid gap-5 uppercase">
@@ -52,7 +81,7 @@ export default () => (
                         height={800}
                     />
                     <div>
-                        <h2 className="text-md font-bold">{name}</h2>
+                        <h2 className="text-h-m text-left">{name}</h2>
                         <UList
                             className="flex gap-5 opacity-50"
                             items={tech}
@@ -66,5 +95,5 @@ export default () => (
                 </div>
             )}
         />
-    </section>
+    </Section>
 )
