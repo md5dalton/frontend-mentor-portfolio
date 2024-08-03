@@ -1,14 +1,6 @@
 import Section from "@/components/Section"
 import UList from "@/components/UList"
-
-const skills = [
-    {name: "HTML", years: 4},
-    {name: "CSS", years: 4},
-    {name: "Javascript", years: 4},
-    {name: "Accessibility", years: 4},
-    {name: "React", years: 3},
-    {name: "Sass", years: 3},
-]
+import { skills } from "@/utils/data"
 
 export default () => (
     <Section>
@@ -18,10 +10,10 @@ export default () => (
                 grid gap-y-6 md:grid-cols-2 md:gap-y-12 lg:grid-cols-3 lg:gap-y-14 
             "
             items={skills}
-            itemHandler={({ name, years }) => (
+            itemHandler={({ name, experience }) => (
                 <div>
                     <h2 className="text-h-l">{name}</h2>
-                    <p className="opacity-50">{`${years} Years Experience`}</p>
+                    <p className="opacity-50">{`${experience} Year${experience != 1 ? "s" : ""} Experience`}</p>
                 </div>
             )}
         />
