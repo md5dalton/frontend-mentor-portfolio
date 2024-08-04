@@ -12,3 +12,34 @@ const date = new Date()
 const year = date.getFullYear()
 
 export const skills = tech.map(({ name, start }) => ({ name, experience: year - start }))
+
+export const projects = [
+    {
+        name: "Results summary component",
+        thumbnails: {
+            small: "", 
+            large: "/images/projects/results-summary-component.jpg"
+        },
+        links: {
+            code: "https://github.com/md5dalton/results-summary-component",
+            site: "https://results-summary-component-khaki-phi.vercel.app/"
+        },
+        tech: [
+            "html", "css"
+        ]
+    },
+    {
+        name: "Social links profile",
+        thumbnails: {
+            small: "", 
+            large: "/images/projects/social-links-profile.jpg"
+        },
+        links: {
+            code: "https://github.com/md5dalton/social-links",
+            site: "https://social-links-livid.vercel.app/"
+        },
+        tech: [
+            "Next JS", "Tailwind CSS"
+        ]
+    },
+]
