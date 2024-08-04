@@ -1,67 +1,9 @@
 import ContactMe from "@/components/ContactMe"
 import Section from "@/components/Section"
 import UList from "@/components/UList"
+import { projects } from "@/utils/data"
 import Image from "next/image"
 import Link from "next/link"
-
-const projects = [
-    {
-        name: "design portfolio",
-        thumbnails: {
-            small: "/thumbs/thumbnail-project-1-small.webp", 
-            large: "/thumbs/thumbnail-project-1-large.webp"
-        },
-        links: {
-            code: "#",
-            site: "#"
-        },
-        tech: [
-            "html", "css"
-        ]
-    },
-    {
-        name: "design portfolio",
-        thumbnails: {
-            small: "/thumbs/thumbnail-project-2-small.webp", 
-            large: "/thumbs/thumbnail-project-2-large.webp"
-        },
-        links: {
-            code: "#",
-            site: "#"
-        },
-        tech: [
-            "html", "css"
-        ]
-    },
-    {
-        name: "design portfolio",
-        thumbnails: {
-            small: "/thumbs/thumbnail-project-2-small.webp", 
-            large: "/thumbs/thumbnail-project-2-large.webp"
-        },
-        links: {
-            code: "#",
-            site: "#"
-        },
-        tech: [
-            "html", "css"
-        ]
-    },
-    {
-        name: "design portfolio",
-        thumbnails: {
-            small: "/thumbs/thumbnail-project-2-small.webp", 
-            large: "/thumbs/thumbnail-project-2-large.webp"
-        },
-        links: {
-            code: "#",
-            site: "#"
-        },
-        tech: [
-            "html", "css"
-        ]
-    },
-]
 
 export default () => (
     <Section>
@@ -72,11 +14,11 @@ export default () => (
         <UList
             className="grid gap-y-10 md:grid-cols-2 md:gap-y-16 md:gap-x-6"
             items={projects}
-            itemHandler={({ name, thumbnails: { small, large }, links: { code, site }, tech }) => (
+            itemHandler={({ name, thumbnails: { large }, links: { code, site }, tech }) => (
                 <div className="grid gap-5 uppercase">
                     <Image
                         alt={name}
-                        src={small}
+                        src={large}
                         width={800}
                         height={800}
                     />
