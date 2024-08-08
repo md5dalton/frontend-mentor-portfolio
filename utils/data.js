@@ -4,6 +4,7 @@ const tech = [
     {name: "CSS", start: 2020},
     {name: "Javascript", start: 2021},
     {name: "React", start: 2022},
+    {name: "SASS/SCSS", start: 2022},
     {name: "Next JS", start: 2023},
     {name: "Tailwind CSS", start: 2023},
 ]
@@ -14,6 +15,20 @@ const year = date.getFullYear()
 export const skills = tech.map(({ name, start }) => ({ name, experience: year - start }))
 
 export const projects = [
+    {
+        name: "Shortly URL shortening API",
+        thumbnails: {
+            small: "", 
+            large: "/images/projects/shortly.jpg"
+        },
+        links: {
+            code: "https://github.com/md5dalton/short-url",
+            site: "https://shorty-pied.vercel.app/"
+        },
+        tech: [
+            "React", "SASS"
+        ]
+    },
     {
         name: "Results summary component",
         thumbnails: {
