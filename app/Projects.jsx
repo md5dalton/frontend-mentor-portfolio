@@ -15,8 +15,9 @@ export default () => (
             className="grid gap-y-10 md:grid-cols-2 md:gap-y-16 md:gap-x-6"
             items={projects}
             itemHandler={({ name, thumbnails: { large }, links: { code, site }, tech }) => (
-                <div className="grid gap-5 uppercase">
+                <div className="grid gap-5 uppercase]">
                     <Image
+                        className=" aspect-[4/3] object-cover object-top"
                         alt={name}
                         src={large}
                         width={800}
