@@ -1,0 +1,1 @@
+const getProjectImageURL = id => `https://${process.env.APPWRITE_ENDPOINT}/v1/storage/buckets/${process.env.APPWRITE_BUCKET_ID}/files/${id}/view?project=${process.env.APPWRITE_PROJECT_ID}`
